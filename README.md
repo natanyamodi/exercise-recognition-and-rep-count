@@ -3,7 +3,7 @@ A video-based fitness analysis tool that classifies exercises and counts repetit
 
 https://github.com/user-attachments/assets/5eb7217e-c770-421f-a132-69676d9d6345
 
-## ✅Supported Exercises:
+## ✅ Supported Exercises:
 - Bicep Curl
 - Squats
 - Lunges
