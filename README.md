@@ -1,34 +1,31 @@
-# Exercise Classification and Rep Counting App
-A video-based fitness tracking tool that uses computer vision to analyze uploaded workout videos, classify exercises, and count reps using body landmarks. Powered by MediaPipe and Streamlit, it supports multiple exercises like squats, pushups, lunges, bicep curls and jumping jacks.
+# 🏋️ Exercise Classification and Rep Counting App
+A video-based fitness analysis tool that classifies exercises and counts repetitions using pose landmarks extracted from uploaded videos. Built using Streamlit, MediaPipe, and a custom-trained classifier, it supports a variety of common exercises.
 
 https://github.com/user-attachments/assets/5eb7217e-c770-421f-a132-69676d9d6345
 
-
 ## 🌟 Overview
-This application uses computer vision to:
-- Detect body movements in real-time from video input
-- Track exercise stages (e.g., "up/down" for squats, "arms up/down" for jumping jacks)
-- Count repetitions for supported exercises
-- Display results in a clean table format
+This application uses computer vision and a machine learning model to:
+- Process uploaded workout videos
+- Recognize the type of exercise being performed
+- Track movement phases (e.g., "up/down" for squats, "arms up/down" for jumping jacks)
+- Count repetitions with high accuracy
+- Display the live video and real-time results in a user-friendly Streamlit interface
 
 ## 🚀 Features
-- Stage Detection: Identifies movement phases (e.g., "up", "down", "arms up")
-- Rep Counting: Automatically counts repetitions for each exercise
-- Multi-Exercise Support: Works with squats, bicep curls, lunges, jumping jacks, and pushups
+- Exercise Classification: Automatically identifies which exercise is being performed.
+- Stage Detection: Determines movement phases to enable accurate rep counting
+- Rep Counter: Tracks total reps per exercise
+- Visual Feedback: Annotated frames showing current exercise, stage, angle, and rep summary in a table
 
 ## How It Works
 - Pose Detection: Uses MediaPipe to track body landmarks
 - Angle Calculation: Measures joint angles to determine movement stages
-- Exercise Logic: Applies exercise-specific rules to count reps
-- Table Display: Shows real-time results in a Streamlit table
+- Exercise Logic: Applies exercise-specific rules to count reps (pose_tracker.py)
+- Prediction Model: A RandomForestClassifier trained on labeled pose landmark data
+- Web App Interface: Built in Streamlit (app.py) for easy video upload and live feedback
 
 ## 🧪 Model Training
-The exercise classifier was trained on a dataset of pose landmarks from various exercises. You have two options:
-
-**Option 1:** Use Pre-trained Model
-- The model is already included in the models folder as exercises.pkl.
-
-**Option 2:** Train Your Own Model
+You can use the pre-trained model (exercises.pkl) or train your own using the provided structure.
 
 ### 📂 Dataset Structure for Training
 ```
