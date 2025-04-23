@@ -26,7 +26,7 @@ This application uses computer vision to:
 The exercise classifier was trained on a dataset of pose landmarks from various exercises. You have two options:
 
 **Option 1:** Use Pre-trained Model
-The model is already included in the models folder as exercises.pkl.
+  The model is already included in the models folder as exercises.pkl.
 
 **Option 2:** Train Your Own Model
 
@@ -44,24 +44,26 @@ exercises/
 - Place the model in the models folder
 
 ## 💻 Setup & Installation
-1. Clone the Repository
+To run the app locally, follow these steps: 
+
+1. **Clone the Repository**
 ```
 git clone https://github.com/natanyamodi/exercise-recognition-and-rep-count.git 
 ````
 
-2. Create Virtual Environment
+2. **Create Virtual Environment**
 ```
 python -m venv venv
 ``` 
 Windows: venv\Scripts\activate
 Mac/Linux: source venv/bin/activate
 
-3. Install Dependencies
+3. **Install Dependencies**
 ```
 pip install -r requirements.txt
 ```
   
-5. Run the App
+5. **Run the App**
 ```
 streamlit run app.py
 ```
