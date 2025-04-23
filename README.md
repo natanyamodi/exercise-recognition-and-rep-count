@@ -3,12 +3,19 @@ A video-based fitness analysis tool that classifies exercises and counts repetit
 
 https://github.com/user-attachments/assets/5eb7217e-c770-421f-a132-69676d9d6345
 
+## ✅Supported Exercises:
+-Bicep Curl
+- Squats
+- Lunges
+- Jumping Jacks
+- Pushups
+
 ## 🌟 Overview
 This application uses computer vision and a machine learning model to:
 - Process uploaded workout videos
 - Recognize the type of exercise being performed
 - Track movement phases (e.g., "up/down" for squats, "arms up/down" for jumping jacks)
-- Count repetitions with high accuracy
+- Count repetitions with high accuracy (99% accuracy using Random Forest classifier)
 - Display the live video and real-time results in a user-friendly Streamlit interface
 
 ## 🚀 Features
