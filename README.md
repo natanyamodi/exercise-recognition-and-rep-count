@@ -26,7 +26,7 @@ This application uses computer vision to:
 The exercise classifier was trained on a dataset of pose landmarks from various exercises. You have two options:
 
 **Option 1:** Use Pre-trained Model
-  The model is already included in the models folder as exercises.pkl.
+- The model is already included in the models folder as exercises.pkl.
 
 **Option 2:** Train Your Own Model
 
