@@ -208,9 +208,7 @@ if uploaded_file is not None:
 
             # Display video and summary side by side
             # Update the video
-            # video_placeholder.image(image, channels="RGB", use_container_width=True)
-
-            video_placeholder.video(tfile.name)
+            video_placeholder.image(image, channels="RGB", use_container_width=True)
 
             # Update the summary table
             summary_placeholder.dataframe(summary_df, use_container_width=True, height=250)
